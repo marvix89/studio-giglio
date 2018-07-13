@@ -1,0 +1,987 @@
+@font-face {
+    font-family: 'RalewayExtraLight';
+    src: url('Raleway-ExtraLight/raleway-extralight.eot');
+    src: url('Raleway-ExtraLight/raleway-extralight.eot') format('embedded-opentype'),
+        url('Raleway-ExtraLight/raleway-extralight.woff') format('woff'),
+        url('Raleway-ExtraLight/raleway-extralight.ttf') format('truetype'),
+        url('Raleway-ExtraLight/raleway-extralight.svg#RalewayExtraLight') format('svg');
+}
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('Raleway-Regular/raleway-regular.eot');
+    src: url('Raleway-Regular/raleway-regular.eot') format('embedded-opentype'),
+        url('Raleway-Regular/raleway-regular.woff') format('woff'),
+        url('Raleway-Regular/raleway-regular.ttf') format('truetype'),
+        url('Raleway-Regular/raleway-regular.svg#RalewayRegular') format('svg');
+}
+@font-face {
+    font-family: 'RalewayThin';
+    src: url('raleway_thin/raleway_thin.eot');
+    src: url('raleway_thin/raleway_thin.eot') format('embedded-opentype'),
+        url('raleway_thin/raleway_thin.woff') format('woff'),
+        url('raleway_thin/raleway_thin.ttf') format('truetype'),
+        url('raleway_thin/raleway_thin.svg#RalewayThin') format('svg');
+}
+
+
+
+html{
+    overflow: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'RalewayExtraLight';
+    margin: 0;
+    padding: 0;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #282D49;
+    border: none;
+}
+/*****HOMEPAGE*****/
+#bodyhome{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;   
+    background: #e8f3f7;
+    overflow:  hidden;
+
+
+}
+#header{
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:  url('../img/sfondo_header.png')100% 130px;
+}
+#freccia_header{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    margin-left: -21px;
+}
+#corpo{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+#corpo_index{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cerchio_home{
+    width: 236px;
+    height: 250px;
+    border-radius: 50%;
+    background: blue;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -118px;
+    margin-top: -125px;
+    background: url('../img/puls_giglio_sfondo.png');
+    text-align: center;
+    color: #282D49;
+    font-size: 61px;
+    display: none;
+
+}
+.cerchio_home img{
+    width: 236px;
+    height: 250px;
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    z-index: 2;
+
+}
+#giglio_home{
+    margin-left: -370px;
+}
+#filippine_home{
+    margin-left: 133px;
+}
+
+#giglio_home label{
+    font-size: 35px;
+    white-space:  nowrap;
+    margin-left: -10px;
+}
+#giglio_home p{
+    margin-top: 260px;
+    margin-left: -77px;
+    width: 390px;
+}
+#filippine_home p{
+    margin-top: 260px;
+    margin-left: -77px;
+    width: 390px;
+
+}
+#header img{
+    position: absolute;
+    top:10px;
+    left: 50%;
+    margin-left: -211px;
+    display: none;
+}
+.ui-switch{
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    top: 95%;
+}
+
+/*****STUDIO GIGLIO*****/
+#header_giglio{
+    width: 100%;
+    height: 74px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+#giglio_homepage{
+
+    position: absolute;
+    top: 11px;
+    left: 25%;
+    margin-left: -133.5px;
+}
+#filippine_homepage{
+
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    margin-left: -192px;
+
+}
+
+.vai_filippine{
+    width: 50%;
+    height: 74px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 99;
+
+}
+.maschera_giglio{
+    width: 50%;
+    height: 74px;
+    z-index: 99999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+.sel{
+    cursor: pointer;
+}
+.maschera_filippine{
+    width: 50%;
+    height: 74px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 99999999;
+
+}
+.nosel{
+    background:    #eeeeee;
+}
+.vai_giglio{
+    width: 50%;
+    height: 74px;
+
+}
+
+.cerchietto{
+    width:96px;
+    height: 104px;
+    text-align:  center;
+    line-height: 252px;
+    font-size: 30px;
+	display:block;
+	text-align:center;
+
+}
+
+
+#section-table{
+    width: 1000px;
+    height: 135px;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    margin-left: -500px;
+}
+.col{
+    float: left;
+    margin:0 35px;
+}
+#puls_storia{
+    background: url('../img/puls_storia.png');
+}
+#puls_servizi{
+    background: url('../img/puls_servizi.png');
+
+}
+#puls_prof{
+    background: url('../img/puls_professionisti.png');
+
+}
+#puls_prof label{
+    cursor: pointer;
+    margin-left: -40px;
+}
+#puls_foto label{
+    cursor: pointer;
+    margin-left: -30px;
+}
+#puls_contatti label{
+    cursor: pointer;
+    margin-left: -5px;
+}
+#puls_foto{
+    background: url('../img/puls_fotovideo.png');
+
+}
+#puls_news{
+    background: url('../img/puls_news.png');
+
+}
+#puls_contatti{
+    background: url('../img/puls_contatti.png');
+
+}
+#freccetta_giglio{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    display: none;
+}
+#freccetta_filippine{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: none;
+}
+
+#barra_navigazione{
+    width: 100%;
+    height: 45px;
+    background: white;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    display: none;
+
+}
+#menu{
+    width: 790px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -375px;
+}
+#menu label{
+    width: 80px;
+    height: 50px;
+    margin-right: 35px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#barretta{
+    background:#282D49;
+    width:50px;
+    height: 5px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+#freccina{
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: 72px;
+    left: 35px;
+    background: url('../img/freccina_sezioni.png');
+    z-index: 9999;
+}
+#freccina2{
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: 72px;
+    right: 35px;
+    background: url('../img/freccina_sezioni.png');
+    z-index: 9999;
+}
+/* Preloader */
+#preloader {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #E8F3F7; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+    width:610px;
+    height:120px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url('../img/giglio.gif'); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-60px 0 0 -305px; /* is width and height divided by two */
+}
+
+#bordo_giglio{
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 74px; 
+    background: url('../img/linea_header.png');
+    z-index: 9998;
+}
+#giglio_wrapper{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    z-index: 999;
+}
+#consolato_wrapper{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    z-index: 999;
+}
+
+
+/***SLIDER**/
+.ls-s-1{  
+    font-size: 45px;
+    color: white;
+    background: #445D7B 1000px 100px;
+    font-family: 'RalewayExtraLight';
+}
+
+/***STORIA GIGLIO***/
+
+#container_storia{
+    opacity: 0;
+    width: 960px;
+    height: 440px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -40px;
+
+    /*    box-shadow:  5px  5px 5px #cccccc , 
+            -5px -5px 5px #cccccc,
+            5px -5px 5px #cccccc,
+            -5px  5px 5px #cccccc;
+        -moz-box-shadow:  10px  15px  5px 5px #cccccc, 
+            -5px -5px 5px #cccccc,
+            5px -5px 5px #cccccc,
+            -5px  5px 5px #cccccc;
+        -webkit-box-shadow:  5px  5px 5px #cccccc, 
+            -5px -5px 5px #cccccc,
+            5px -5px 5px #cccccc,
+            -5px  5px 5px #cccccc;
+          filter: progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction=135, Strength=10);*/
+
+}
+#foto_storia{
+    width: 320px;
+    height: 440px;
+    float:left;
+    background: #445D7B;
+}
+#descrizione_storia{
+    float:left;
+    width: 640px;
+    height: 440px;
+    background: #445D7B ;
+     
+    font-size: 16px;
+    color: white;
+
+}
+#descrizione_storia h1{
+    font-family: 'RalewayThin';
+    font-size: 40px;
+    margin-top: 25px;
+    margin-left: 26px;
+
+}
+#descrizione_storia p{
+    width: 580px;
+    margin-left: 26px;
+    line-height: 24px;
+}
+#descrizione_storia div{
+    margin-left: 225px;
+}
+#sotto_storia{
+    float:left;
+    margin-top: 10px;
+    width: 960px;
+    height: 150px;
+    background: white 960px 65px;
+    font-size: 40px;   
+
+}
+#sotto_storia div{
+    float: left;
+
+}
+#sotto_storia div p{
+    margin-top: 3px;
+    margin-left: 15px;
+	line-height: 140px;
+}
+.al{
+    margin-top: 8px;
+}
+.marg{
+    margin-right: 90px;
+    margin-top: 8px;
+}
+#img_storia1{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+#img_storia2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+
+/*****PROFESSIONISTI*******/
+
+
+
+#container_professionisti{
+    width: 1100px;
+    height: 440px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -475px;
+    margin-top: -200px;
+    opacity: 0;
+}
+#commercialisti,#lavoro,#avvocati,#img_legale,#contabile,#avv,#dott,#altre_attività,#altre_slide{
+    float:left;
+}
+#container_cat div{
+    float:left;
+}
+#container_professionisti .p1{ 
+    font-size: 40px;
+    font-family: 'RalewayExtraLight';
+
+}
+#container_professionisti label{
+    font-family: 'RalewayExtraLight';
+
+}
+#container_professionisti p{ 
+    font-size: 22px;
+    font-family: 'RalewayRegular';
+
+}
+#container_professionisti p,#container_professionisti .p1{
+    color: #282D49;
+}
+#contabile,#legale,#altre_slide,#avv,#dott{
+    background: #E8F3F7;
+}
+
+#commercialisti,#avvocati,#lavoro{
+    margin-bottom: -10px;
+    margin-top: -50px;
+}
+#commercialisti .p1,#avvocati .p1,#lavoro .p1{
+    margin-top: 0px;
+    margin-right: 50px;
+}
+#avvocati img{
+    margin-left: 71px;
+
+}
+#avvocati .p1{
+    margin-left: 26px;
+}
+#commercialisti img{
+    margin-left: 100px;
+
+}
+#lavoro img{
+    margin-left: 187px;
+}
+#contabile{
+    width: 750px;
+    height: 99px;
+    border-bottom: 1px solid white;
+}
+#contabile .p1{
+    margin-top: 0px;
+    margin-left: 10px;
+
+}
+#contabile p{
+    margin-top: -20px;
+    margin-left: 10px;
+
+}
+#lavoro .p1{
+    margin-left: 24px;
+}
+#legale{
+    width: 750px;
+    height: 100px;
+    float:left;
+    margin-top: -103px;
+
+}
+#legale .p1{
+    margin-top: 0px;
+    margin-left: 10px;
+
+}
+#legale p{
+    margin-top: -20px;
+    margin-left: 10px;
+
+}
+#altre_attivita{
+    width: 960px;
+    height: 180px;
+
+
+}
+#altre_slide{
+    width:466px;
+    height: 180px;
+    border-right: 1px solid white;
+    margin-top: 10px;
+    overflow:   hidden; 
+    font-family: 'RalewayExtraLight';
+
+
+}
+#altre_slide .p1{
+    margin-top: -65px;
+    margin-left: 10px;
+
+
+}
+#altre_slide p{
+    position: absolute;
+    margin-top: -10px;
+    width: 400px;
+    top:380px;
+
+}
+#p1{
+    left: 10px;
+}
+#p2{
+    left: 10px;
+    display: none;
+}
+#p3{
+    left: 10px;
+    display: none;
+
+}
+#avv{
+    width:240px;
+    height: 180px;
+    border-left: 1px solid white;
+    margin-top: 10px;
+
+}
+
+#avv p{
+    margin-left: 8px;
+
+}
+#avv_p1{
+    margin-top: 60px;
+
+}
+#dott p{
+    margin-left: 5px;
+
+}
+#dott_p1{
+    margin-top: 60px;
+}
+#dott{
+    width:240px;
+    height: 180px;
+    margin-left: 1px;
+    margin-top: 10px;
+
+}
+#pallini_prof{
+    position: absolute;
+    bottom: -30px;
+    left: 220px;
+
+}
+#pallino2{
+    margin-left: 5px;
+}
+#pallino3{
+    margin-left: 5px;
+}
+/*****SERVIZI*******/
+
+#container_servizi{
+    width: 1005px;
+    height: 530px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -245px;
+    margin-left: -490px;
+    opacity: 0;
+}
+#corpo_servizi{
+    width: 954px;
+    height: 500px;
+    background: #282D49;
+}
+#corpo_servizi p{
+    font-size: 25px;
+    color: white;
+    width: 888px;
+    margin-left: 40px;
+    line-height: 35px;
+}
+#corpo_servizi2{
+    display: none;   
+    position: absolute;
+    top: 10px;
+
+}
+#testo_servizi{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#top_servizi,#bottom_servizi{
+    width: 1908px;
+    height: 10px;
+    background: url('../img/triangolino.png');
+
+}
+.clearfix{
+    width: 954px;
+    height: 10px;
+    overflow: hidden;
+}
+#bottom_servizi{
+    width: 1908px;
+    height: 10px;
+    background: url('../img/triangolino_2.png');  
+}
+#prec_serv{
+    position: absolute;
+    top: 250px;
+    left: -20px;
+    width: 42px;
+    height: 42px;
+    background: url('../img/indietro_off.png');
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+#prec_serv:hover{
+    background: url('../img/indietro_on.png');
+
+}
+#next_serv{
+    position: absolute;
+    top: 250px;
+    right: 30px;
+    width: 42px;
+    height: 42px;
+    z-index: 1;
+    cursor: pointer;
+    background: url('../img/avanti_off.png');
+
+
+}
+#next_serv:hover{
+    background: url('../img/avanti_on.png');
+
+}
+
+#pallini_servizi{
+    position: absolute;
+    bottom: 25px;
+    left: 450px;
+}
+/****FOTO&VIDEO*****/
+
+#container_foto{
+    width: 900px;
+    height: 520px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+    overflow-x: hidden;
+    overflow-y: auto; 
+
+}
+#container_foto div{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+#title_foto,#title_video{
+    font-size: 40px;
+    margin-top: -40px;
+    margin-bottom: -25px;
+    width: 50px;
+    height: 30px;
+
+}
+.foto{
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+/***CONTATTI***/
+
+
+#container_contatti{
+    width: 900px;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -285px;
+    margin-left: -450px;
+    font-size: 38px;
+    color:  #282D49;
+    text-align: center;
+
+}
+#sotto_cont{
+    width: 100%;
+    height: 300px;
+    min-height:300px; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #445D7B;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    line-height: 20px;
+    display: none;
+
+}
+#testo_sedi,#testo_orari,#testo_contatti{
+    position: absolute;
+    top: -35px;
+    margin-top: 20px;
+}
+#mailstudio p{
+    color: white;
+}
+#mailstudio p:hover{
+    color: #dd5252;
+}
+#testo_contatti{
+    left: 50%;
+    margin-left: -183px;
+    text-align: center;
+}
+#testo_orari{
+    left: 50%;
+    margin-left: -140px;
+    white-space: nowrap;
+    text-align: center;
+	padding-top: 30px;
+}
+#testo_sedi{
+    left: 50%;
+    margin-left: -340px;
+    white-space: nowrap;
+    text-align: center;
+	padding-top: 30px;
+}
+#footer_giglio{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:  #282D49;
+    font-size: 14px;
+    color: white;
+}
+#footer_giglio a{
+    color: white;
+}
+#footer_giglio a:hover{
+    color:  #66ff00;
+}
+#credit{
+    position: absolute;
+    top: -5px;
+    left: 15px;
+}
+#client{
+    position: absolute;
+    top: -5px;
+    right: 15px;
+
+}
+#freccetta_contatti{
+    width: 18px;
+    height: 9px;
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    margin-left: -40px;
+    background: url('../img/triangolino_contatti.png');
+}
+.cerchio_contatti{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background:  #445D7B;
+    margin-right: 90px;
+    margin-left: 90px;
+    float:left;
+    cursor: pointer;
+}
+
+#contatti_img{
+    margin-left: -16.5px;
+}
+
+.cerchio_contatti p{
+    margin-top: -50px;
+}
+#contatti p{
+    margin-top: -58px;
+    margin-left:-18px;
+
+
+}
+#sedi p{
+    margin-top: -57px;
+    margin-left: 1px;
+}
+#orari p{
+    margin-top: -57px;
+}
+#sedi{
+    width:110px;
+    height: 110px;
+}
+#puls_play{
+    position: absolute;
+    top: 38px;
+    left: 38px;
+}
+#puls_play:hover{
+    opacity: 0.5;
+}
+.foto:hover{
+    opacity: 0.7; 
+}
+
+
+
+
+
+
+
+
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+	background:#E8F3F7;
+    z-index:10;
+	display:none; 
+	padding:14px 20px;
+    margin-top:-20px;
+  margin-left:98px;
+    width:440px; 
+	line-height:25px;
+}
+a.tooltip:hover span{
+    display:inline; 
+	position:absolute;
+	color:#111;
+    border:1px solid #4C7291;
+	background:#E8F3F7;
+}
+.callout {z-index:20;position:absolute;border:0;top:-8px;left:120px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+        
+    -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 2px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 2px 0px;
+     box-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 2px 0px;
+}
+
+.news1 {
+width: 464px;
+height: 183px;
+background: white;
+float: left;
+margin-left: 20px;
+margin-top: 20px;
+}

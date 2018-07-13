@@ -1,0 +1,61 @@
+.holder, .holder1 {
+    margin: 15px 0;
+font-size: 12px;
+}
+
+.holder a {
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0 5px;
+    color: #333;
+}
+
+.holder a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.holder a.jp-previous {
+    margin-right: 15px;
+    background: url('../img/news_indietro_off.png') no-repeat;
+    width: 50px;
+    height: 20px;
+}
+.holder a.jp-previous:hover{
+    background: url('../img/news_indietro_on.png')  no-repeat;
+
+}
+.holder a.jp-next.jp-disabled{
+    background: url('../img/news_indietro.png')  no-repeat;
+
+}
+.holder a.jp-next { 
+    margin-left: 15px;
+    background: url('../img/news_avanti_off.png')  no-repeat;
+    width: 50px;
+    height: 20px;
+}
+.holder a.jp-next:hover{
+    background: url('../img/news_avanti_on.png')  no-repeat;
+
+}
+.holder a.jp-next.jp-disabled{
+    background: url('../img/news_avanti.png')  no-repeat;
+
+}
+.holder a.jp-current, a.jp-current:hover { 
+    color: #FF4242;
+    font-weight: bold;
+}
+
+.holder a.jp-disabled, a.jp-disabled:hover {
+    color: #bbb;
+}
+
+.holder a.jp-current, a.jp-current:hover,
+.holder a.jp-disabled, a.jp-disabled:hover {
+    cursor: default; 
+    background: none;
+}
+
+.holder span { margin: 0 5px; }

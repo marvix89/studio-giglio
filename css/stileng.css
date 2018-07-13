@@ -1,0 +1,36 @@
+#puls_prof label{
+    margin: -45px;
+}
+#puls_servizi label{
+    margin-left: -9px;
+}
+#puls_foto label{
+    margin-left: -44px;
+}
+#puls_contatti label{
+    margin-left: -12px;
+}
+#lavoro .p1 {
+margin-left: 60px;
+}
+#avvocati .p1 {
+margin-left: 61px;
+}
+#commercialisti img {
+margin-left: 82px;
+}
+#avvocati img {
+margin-left: 109px;
+}
+#lavoro img {
+margin-left: 206px;
+}
+#contatti p {
+margin-left: -28px;
+}
+#sedi p{
+    margin-left: -26px;
+}
+#orari p{
+    margin-left: -2px;
+}
